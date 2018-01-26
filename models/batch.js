@@ -9,7 +9,8 @@ const studentSchema = new Schema({
   green: { type: Boolean, default: false },
   yellow: { type: Boolean, default: false },
   red: { type: Boolean, default: false },
-  //likedBy: [{ type: Schema.Types.ObjectId, ref: 'users' }],
+  //color: {type: String, default: ""}
+  //ratedBy: [{ type: Schema.Types.ObjectId, ref: 'users' }],
 
 })
 

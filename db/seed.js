@@ -21,7 +21,22 @@ const createBatches = (token) => {
       })
   })
 }
-
+/*
+const createStudents = (token) => {
+  return batches.map((batch) => {
+    return request
+      .post(createUrl('/batches/:id/students'))
+      .set('Authorization', `Bearer ${token}`)
+      .send(student)
+      .then((res) => {
+        console.log('Student seeded...', res.body.title)
+      })
+      .catch((err) => {
+        console.error('Error seeding student!', err)
+      })
+  })
+}
+*/
 
 const authenticate = (email, password) => {
   request
